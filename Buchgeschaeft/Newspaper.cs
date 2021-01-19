@@ -12,9 +12,6 @@ namespace Buchgeschaeft
 
         public Newspaper(decimal price, int stock, string Title, DateTime dateOfIssue) : base(price, stock, Title)
         {
-            this.price = price;
-            this.stock = stock;
-            this.Title = Title;
             this.dateOfIssue = dateOfIssue;
         }
 

@@ -10,19 +10,27 @@ namespace Buchgeschaeft
     {
         public string author { get; set; }
         public string isbn { get; set; }
+        public Category category { get; set; }
 
-        public Book(decimal price, int stock, string Title, string author, string isbn) : base(price, stock, Title)
+        public Book(decimal price, int stock, string Title, string author, string isbn, Category category) : base(price, stock, Title)
         {
-            this.price = price;
-            this.stock = stock;
-            this.Title = Title;
             this.author = author;
             this.isbn = isbn;
+            this.category = category;
         }
 
         public override string ToString()
         {
-            return $"{Title} ({author})";
+            return $"{Title} ({author}, {category} ({(int)this.category}))";
         }
+    }
+
+    enum Category
+    {
+        History = 10,
+        Thriller = 20,
+        Fantasy = 30,
+        Food = 40,
+        Children = 50
     }
 }
