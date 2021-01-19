@@ -18,5 +18,25 @@ namespace Buchgeschaeft
             this.stock = stock;
             this.Title = Title;
         }
+
+        public bool TryPurchase(int number)
+        {
+            stock += number;
+            return true;
+        }
+
+        public bool TrySell(int number)
+        {
+            if (number <= stock)
+            {
+                stock -= number;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
+        }
     }
 }

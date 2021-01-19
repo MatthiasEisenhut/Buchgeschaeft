@@ -19,5 +19,10 @@ namespace Buchgeschaeft
             this.isbn = isbn;
             this.duration = duration;
         }
+
+        public override string ToString()
+        {
+            return $"{Title} ({author}, {duration})";
+        }
     }
 }
