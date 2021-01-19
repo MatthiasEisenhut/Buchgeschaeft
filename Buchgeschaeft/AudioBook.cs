@@ -22,7 +22,7 @@ namespace Buchgeschaeft
 
         public override string ToString()
         {
-            return $"{Title} ({author}, {duration})";
+            return $"{Title} ({author}, {duration} Minuten)";
         }
     }
 }
