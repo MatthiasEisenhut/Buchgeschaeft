@@ -16,7 +16,8 @@ namespace Buchgeschaeft
             this.price = price;
             this.stock = stock;
             this.Title = Title;
-
+            this.author = author;
+            this.isbn = isbn;
         }
     }
 }

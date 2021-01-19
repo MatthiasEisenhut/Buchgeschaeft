@@ -10,9 +10,14 @@ namespace Buchgeschaeft
     {
         public int duration { get; set; }
 
-        public AudioBook(decimal price, int stock, string title, string author, string isbn, int duration) : base(price, stock, title, author, isbn)
+        public AudioBook(decimal price, int stock, string Title, string author, string isbn, int duration) : base(price, stock, Title, author, isbn)
         {
-
+            this.price = price;
+            this.stock = stock;
+            this.Title = Title;
+            this.author = author;
+            this.isbn = isbn;
+            this.duration = duration;
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Buchgeschaeft
     {
         public decimal price { get; set; }
         public int stock { get; set; }
-        public string Title { get; }
+        public string Title { get; set; }
 
         public Item(decimal price, int stock, string Title)
         {
