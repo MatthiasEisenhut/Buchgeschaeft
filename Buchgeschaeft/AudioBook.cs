@@ -8,9 +8,9 @@ namespace Buchgeschaeft
 {
     class AudioBook : Book
     {
-        public int duration { get; set; }
+        public int duration;
 
-        public AudioBook(decimal price, int stock, string Title, string author, string isbn, int duration, Category category) : base(price, stock, Title, author, isbn, category)
+        protected internal AudioBook(decimal price, int stock, string Title, string author, string isbn, int duration, Category category) : base(price, stock, Title, author, isbn, category)
         {          
             this.duration = duration;
         }

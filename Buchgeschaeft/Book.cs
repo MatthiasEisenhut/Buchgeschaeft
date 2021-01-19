@@ -8,11 +8,11 @@ namespace Buchgeschaeft
 {
     class Book : Item
     {
-        public string author { get; set; }
-        public string isbn { get; set; }
-        public Category category { get; set; }
+        public string author;
+        public string isbn;
+        protected Category category;
 
-        public Book(decimal price, int stock, string Title, string author, string isbn, Category category) : base(price, stock, Title)
+        protected internal Book(decimal price, int stock, string Title, string author, string isbn, Category category) : base(price, stock, Title)
         {
             this.author = author;
             this.isbn = isbn;

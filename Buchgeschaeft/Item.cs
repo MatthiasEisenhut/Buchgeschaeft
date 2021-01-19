@@ -8,11 +8,11 @@ namespace Buchgeschaeft
 {
     class Item
     {
-        public decimal price { get; set; }
-        public int stock { get; set; }
-        public string Title { get; set; }
+        public decimal price;
+        public int stock;
+        public string Title { get; }
 
-        public Item(decimal price, int stock, string Title)
+        protected internal Item(decimal price, int stock, string Title)
         {
             this.price = price;
             this.stock = stock;

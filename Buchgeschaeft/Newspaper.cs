@@ -8,9 +8,9 @@ namespace Buchgeschaeft
 {
     class Newspaper : Item
     {
-        public DateTime dateOfIssue { get; set; }
+        public DateTime dateOfIssue;
 
-        public Newspaper(decimal price, int stock, string Title, DateTime dateOfIssue) : base(price, stock, Title)
+        protected internal Newspaper(decimal price, int stock, string Title, DateTime dateOfIssue) : base(price, stock, Title)
         {
             this.dateOfIssue = dateOfIssue;
         }
