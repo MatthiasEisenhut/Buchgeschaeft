@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Buchgeschaeft
 {
-    class AudioBook : Book
+    public class AudioBook : Book
     {
         public int duration;
 
-        protected internal AudioBook(decimal price, int stock, string Title, string author, string isbn, int duration, Category category) : base(price, stock, Title, author, isbn, category)
+        public AudioBook(decimal price, int stock, string Title, string author, string isbn, int duration, Category category) : base(price, stock, Title, author, isbn, category)
         {          
             this.duration = duration;
         }

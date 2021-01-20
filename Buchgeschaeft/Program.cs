@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using BuchgeschaeftLibrary;
+using Buchgeschaeft;
 
 namespace Buchgeschaeft
 {

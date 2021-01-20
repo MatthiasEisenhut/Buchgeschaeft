@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Buchgeschaeft
 {
-    class Book : Item
+    public class Book : Item
     {
         public string author;
         public string isbn;
         protected Category category;
 
-        protected internal Book(decimal price, int stock, string Title, string author, string isbn, Category category) : base(price, stock, Title)
+        public Book(decimal price, int stock, string Title, string author, string isbn, Category category) : base(price, stock, Title)
         {
             this.author = author;
             this.isbn = isbn;
@@ -25,7 +25,7 @@ namespace Buchgeschaeft
         }
     }
 
-    enum Category
+    public enum Category
     {
         History = 10,
         Thriller = 20,

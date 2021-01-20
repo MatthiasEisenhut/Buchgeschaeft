@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Buchgeschaeft
 {
-    class Newspaper : Item
+    public class Newspaper : Item
     {
         public DateTime dateOfIssue;
 
-        protected internal Newspaper(decimal price, int stock, string Title, DateTime dateOfIssue) : base(price, stock, Title)
+        public Newspaper(decimal price, int stock, string Title, DateTime dateOfIssue) : base(price, stock, Title)
         {
             this.dateOfIssue = dateOfIssue;
         }

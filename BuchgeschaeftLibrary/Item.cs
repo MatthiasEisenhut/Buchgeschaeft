@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Buchgeschaeft
 {
-    class Item
+    public class Item
     {
         public decimal price;
         public int stock;
         public string Title { get; }
 
-        protected internal Item(decimal price, int stock, string Title)
+        public Item(decimal price, int stock, string Title)
         {
             this.price = price;
             this.stock = stock;
